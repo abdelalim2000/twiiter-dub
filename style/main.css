@@ -1,1 +1,210 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p,
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 95vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.wrapper .about {
+  background: #197fbe;
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .about .content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+}
+
+.wrapper .about p {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.wrapper .about p .fas {
+  padding-right: 10px;
+}
+
+.wrapper .about::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../assets/twitter-bg.png") no-repeat;
+  background-position: -100px -100px;
+  background-size: 1400px;
+}
+
+.wrapper .settings {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+}
+
+.wrapper .settings .tab {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .settings .tab form {
+  margin: 35.75px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.wrapper .settings .tab form input {
+  display: inline-block;
+  padding: 12px;
+  border: none;
+  border: 1px solid #e6ecf0;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 3px;
+  outline: 0;
+  background: whitesmoke;
+}
+
+.wrapper .settings .tab form .log {
+  padding: 12px;
+  border: 1px solid #6ec3f7;
+  border-radius: 50px;
+  margin-left: 15px;
+  color: #6ec3f7;
+}
+
+.wrapper .settings .tab form .forget {
+  color: black;
+  text-align: right;
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 55px;
+}
+
+.wrapper .settings .content-2 {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.wrapper .settings .content-2 .wrap {
+  width: 400px;
+  text-align: left;
+  height: 100%;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.wrapper .settings .content-2 .wrap .fab {
+  color: #6ec3f7;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.wrapper .settings .content-2 .wrap h2 {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 70px;
+}
+
+.wrapper .settings .content-2 .wrap p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.wrapper .settings .content-2 .wrap .signup {
+  background: #1da1f2;
+  color: white;
+}
+
+.wrapper .settings .content-2 .wrap .login {
+  color: #1da1f2;
+}
+
+.wrapper .settings .content-2 .wrap .signup, .wrapper .settings .content-2 .wrap .login {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  display: block;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid #1da1f2;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  color: #333333;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  display: inline-block;
+}
+/*# sourceMappingURL=main.css.map */
